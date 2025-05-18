@@ -1,0 +1,9 @@
+{
+  "domain": "user_dashboard",
+  "name": "User Dashboard Guard",
+  "version": "1.0.0",
+  "documentation": "https://github.com/inzlukaszf/user_dashboard",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": ["@inzlukaszf"]
+}

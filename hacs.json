@@ -1,0 +1,11 @@
+{
+  "name": "User Dashboard Guard",
+  "content_in_root": false,
+  "domains": ["integration"],
+  "metadata": {
+    "maintainer": "@inzlukaszf",
+    "repo_url": "https://github.com/inzlukaszf/user_dashboard",
+    "issues_url": "https://github.com/inzlukaszf/user_dashboard/issues",
+    "license": "MIT"
+  }
+}
