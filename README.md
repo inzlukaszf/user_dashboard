@@ -25,14 +25,14 @@ Wtyczka **User Dashboard Guard** dla Home Assistant umożliwia administratorom p
        sidebar_title: Dashboard Admin
        sidebar_icon: mdi:account-cog
        url_path: user-dashboard-admin
-       module_url: /local/user_dashboard_admin.js
+       module_url: /local/user_dashboard/user_dashboard_admin.js
        require_admin: true
 
      - name: user-dashboard-denied
        sidebar_title: Access Denied
        sidebar_icon: mdi:lock-alert
        url_path: user-dashboard-denied
-       module_url: /local/user_dashboard_denied.js
+       module_url: /local/user_dashboard/user_dashboard_denied.js
    ```
 
    Ustawienie `require_admin: true` zapewnia, że tylko administratorzy mają dostęp do panelu administracyjnego.
