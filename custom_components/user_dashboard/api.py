@@ -9,6 +9,11 @@ async def async_setup_api(hass):
     async def check_access(request):
         user = request["hass_user"].name
         dash = request.query.get("dashboard")
+        
+        always_allowed = {"user-dashboard-admin", "user-dashboard-denied"}  # set of always allowed dashboards
+        if dash in always_allowed:
+            return web.Response(status=200)
+            
         allowed = hass.data[DOMAIN]["assignments"].get(dash, set())
         return web.Response(status=200) if user in allowed else web.Response(status=403)
 
